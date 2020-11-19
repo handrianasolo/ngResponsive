@@ -1,0 +1,20 @@
+<div class="w3-container bgimg">
+    <div class="w3-display-middle">
+        <span class="w3-center w3-padding-large w3-black w3-animate-opacity" style="white-space: nowrap;">WHAT WE DO</span>
+    </div>
+</div>
+<div class="w3-container w3-padding w3-animate-left">
+    <h3 class="w3-center">PORTFOLIO</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="w3-row-padding w3-margin-top" *ngFor="let wrap of tab">
+        <div class="w3-quarter" *ngFor="let portfolio of wrap">
+            <div class="w3-card">
+                <img [routerLink]="['/portfolio-details', portfolio.id-1]" class="w3-hover-opacity" src="{{ portfolio.src }}" alt="{{ portfolio.src }}" style="cursor: pointer;">
+                <div class="w3-container">
+                    <h4>{{ portfolio.title }}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
