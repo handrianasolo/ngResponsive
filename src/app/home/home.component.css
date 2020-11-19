@@ -1,0 +1,13 @@
+.bgImg {
+    background-image: url(../../assets/img/bg.jpg);
+    min-width: 100vw;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    text-align: justify;
+}
