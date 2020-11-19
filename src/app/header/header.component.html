@@ -1,0 +1,17 @@
+<div class="w3-top">
+    <!-- navbar classique -->
+    <div class="w3-bar w3-white">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" (click)="toggleMenuMobile()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a routerLink="/home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+        <a routerLink="/portfolios" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a routerLink="/contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <!-- navbar mobile -->
+    <div class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide" [ngClass]="{'w3-show': menuMobile}">
+        <a routerLink="/portfolio" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a routerLink="/contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+</div>
